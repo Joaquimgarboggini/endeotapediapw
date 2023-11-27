@@ -1,0 +1,920 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.fundo{
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.header {
+  background-color: rgba(255,187,56,1);
+  color: white;
+  text-align: center;
+  padding: 1em;
+  height: 12%;
+
+}
+
+.inferior {
+  background-color: rgba(255,187,56,1);
+  color: white;
+  text-align: center;
+  padding: 2em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+}
+.tituloHeader:before {
+  opacity: 1;
+  position: absolute;
+  top: 3%;
+  left: 5.7%;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  font-size: 1.5vw;
+  content: "EndeotaPedia";
+}
+.botoesHeader {
+  width: 578px;
+  height: 100px;
+  background: url("../images/v51_6.png");
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  left: 317px;
+}
+.siganosEm:before {
+  opacity: 1;
+  position: absolute;
+  top: 86%;
+  left: 50%;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  font-size: 1.3vw;
+  content:"Siga-nos em:";
+}
+.img_logo {
+  width: 5%;
+  height: 8%;
+  background: url("../images/v51_35.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  overflow: hidden;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.img_logo:hover {
+  top: 0.5%;
+}
+
+.img_twitter {
+  width: 3%;
+  height: 5%;
+  background: url("../images/v51_37.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 92%;
+  left: 54%;
+  overflow: hidden;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.img_twitter:hover{
+  top: 90%;
+}
+
+.img_facebook {
+  width: 3%;
+  height: 6%;
+  background: url("../images/v51_38.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 91%;
+  left: 58%;
+  overflow: hidden;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.img_facebook:hover{
+  top: 90%;
+}
+
+.img_instagram {
+  width: 3%;
+  height: 6%;
+  background: url("../images/v51_39.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 91%;
+  left: 46%;
+  overflow: hidden;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.img_instagram:hover{
+  top: 90%;
+}
+
+.img_github {
+  width: 3%;
+  height: 6%;
+  background: url("../images/v51_40.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 91%;
+  left: 50%;
+  overflow: hidden;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.img_github:hover{
+  top: 90%;
+}
+
+.botao_grupo {
+  width: 8%;
+  height: 8%;
+  background-color: #4EBFFF;
+  position: absolute;
+  top: 2%;
+  left: 18%;
+  border-radius: 15%;
+  font-family: Comic sans MS;
+  font-size: 1.5vw;
+  font-weight: 100;
+  color: #FFF6A4;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-align:center;
+}
+.botao_grupo:hover{
+  background-color: #FFF6A4;
+  color: #4EBFFF;
+  top: 0px;
+  width: 8.5%;
+  height: 8.5%;
+}
+
+.botao_creditos {
+  width: 8%;
+  height: 8%;
+  background-color: #4EBFFF;
+  position: absolute;
+  top: 2%;
+  left: 27%;
+  border-radius: 15%;
+  font-family: Comic sans MS;
+  font-size: 1.5vw;
+  font-weight: 100;
+  color: #FFF6A4;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-align:center;
+}
+.botao_creditos:hover{
+  background-color: #FFF6A4;
+  color: #4EBFFF;
+  top: 0px;
+  width: 8.5%;
+  height: 8.5%;
+}
+
+.botao_pagInicial {
+  width: 8%;
+  height: 8%;
+  background-color: #4EBFFF;
+  position: absolute;
+  top: 2%;
+  left: 36%;
+  border-radius: 15%;
+  font-family: Comic sans MS;
+  font-size: 1.3vw;
+  font-weight: 100;
+  color: #FFF6A4;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-align:center;
+}
+.botao_pagInicial:hover{
+  background-color: #FFF6A4;
+  color: #4EBFFF;
+  top: 0px;
+  width: 8.5%;
+  height: 8.5%;
+}
+
+.botao_login {
+  width: 7%;
+  height: 7%;
+  background-color: #4EBFFF;
+  opacity: 1;
+  position: absolute;
+  top: 2.5%;
+  left: 90%;
+  color: #FFF6A4;
+  border-radius: 15%;
+  font-family: Comic Sans MS;
+  font-size: 1.5vw;
+  font-weight: 300;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-align:center;
+}
+.botao_login:hover {
+  background-color: #FFF6A4;
+  color: #4EBFFF;
+  top: 0px;
+  width: 7.5%;
+  height: 7.5%;
+}
+
+/*Pack do Joinha página inicial*/
+.joinha {
+  width: 15%;
+  height: 35%;
+  opacity: 1;
+  position: absolute;
+  top: 30%;
+  left: 0.5%;
+  border-radius: 15%;;
+  background-image: url("../images/background-library.png");
+  background-size: 100% 100%;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.joinha:hover{
+  top: 28%;
+  background-image: url("../images/background-onhover.png");
+}
+
+.emoji-joinha {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+.title-joinha {
+  width: 70%;
+  height: 20%;
+  background-color: #4EBFFF;
+  margin-top: 20%;
+  border-end-start-radius: 0%;
+  font-family: Comic Sans MS;
+  text-align: center;
+  font-size: 1.2vw;
+}
+.download-div-joinha {
+  background-color: #FFB84E;
+  width: 30%;
+  height: 20%;
+  border-end-end-radius: 0%;
+  margin-left: 70%;
+  margin-top: -23.4%;
+  transition-duration: 0.4s;
+}
+.download-div-joinha:hover{
+  background-color: rgb(252, 108, 25);
+}
+.download-pack-joinha{
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+
+/*Pack do 3D página inicial*/
+.engraçado {
+  width: 15%;
+  height: 35%;
+  opacity: 1;
+  position: absolute;
+  top: 30%;
+  left: 17%;
+  border-radius: 15%;;
+  background-image: url("../images/background-library2.png");
+  background-size: 100% 100%;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.engraçado:hover{
+  top: 28%;
+  background-image: url("../images/background-onhover.png");
+}
+
+.emoji-engraçado {
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+.title-engraçado {
+  width: 70%;
+  height: 20%;
+  background-color: #4EBFFF;
+  margin-top: 3.8%;
+  border-end-start-radius: 0%;
+  font-family: Comic Sans MS;
+  text-align: center;
+  font-size: 1.2vw;
+}
+.download-div-engraçado {
+  background-color: #FFB84E;
+  width: 30%;
+  height: 20%;
+  border-end-end-radius: 0%;
+  margin-left: 70%;
+  margin-top: -23.4%;
+  transition-duration: 0.4s;
+}
+.download-div-engraçado:hover{
+  background-color: rgb(252, 108, 25);
+}
+.download-pack-engraçado{
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+
+/*Pack do Iphone página inicial*/
+.iphone {
+  width: 15%;
+  height: 35%;
+  opacity: 1;
+  position: absolute;
+  top: 30%;
+  left: 34%;
+  border-radius: 15%;
+  background-image: url("../images/background-library3.png");
+  background-size: 100% 100%;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.iphone:hover{
+  top: 28%;
+  background-image: url("../images/background-onhover.png");
+}
+
+.emoji-iphone {
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+.title-iphone {
+  width: 70%;
+  height: 20%;
+  background-color: #4EBFFF;
+  margin-top: 6%;
+  border-end-start-radius: 0%;
+  font-family: Comic Sans MS;
+  text-align: center;
+  font-size: 1.2vw;
+}
+.download-div-iphone {
+  background-color: #FFB84E;
+  width: 30%;
+  height: 20%;
+  border-end-end-radius: 0%;
+  margin-left: 70%;
+  margin-top: -23.4%;
+  transition-duration: 0.4s;
+}
+.download-div-iphone:hover{
+  background-color: rgb(252, 108, 25);
+}
+.download-pack-iphone{
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+
+/*Pack do Azulao página inicial*/
+.azulao {
+  width: 15%;
+  height: 35%;
+  opacity: 1;
+  position: absolute;
+  top: 30%;
+  left: 51%;
+  border-radius: 15%;
+  background-image: url("../images/background-library4.png");
+  background-size: 100% 100%;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.azulao:hover{
+  top: 28%;
+  background-image: url("../images/background-onhover.png");
+}
+
+.emoji-azulao {
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+.title-azulao {
+  width: 70%;
+  height: 20%;
+  background-color: #4EBFFF;
+  margin-top: 6%;
+  border-end-start-radius: 0%;
+  font-family: Comic Sans MS;
+  text-align: center;
+  font-size: 1.2vw;
+}
+.download-div-azulao {
+  background-color: #FFB84E;
+  width: 30%;
+  height: 20%;
+  border-end-end-radius: 0%;
+  margin-left: 70%;
+  margin-top: -23.4%;
+  transition-duration: 0.4s;
+}
+.download-div-azulao:hover{
+  background-color: rgb(252, 108, 25);
+}
+.download-pack-azulao{
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+
+/*Pack do Popo página inicial*/
+.popo {
+  width: 15%;
+  height: 35%;
+  opacity: 1;
+  position: absolute;
+  top: 30%;
+  left: 68%;
+  border-radius: 15%;
+  background-image: url("../images/background-library5.png");
+  background-size: 100% 100%;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.popo:hover{
+  top: 28%;
+  background-image: url("../images/background-onhover.png");
+}
+
+.emoji-popo {
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+.title-popo {
+  width: 70%;
+  height: 20%;
+  background-color: #4EBFFF;
+  margin-top: 6%;
+  border-end-start-radius: 0%;
+  font-family: Comic Sans MS;
+  text-align: center;
+  font-size: 1.2vw;
+}
+.download-div-popo {
+  background-color: #FFB84E;
+  width: 30%;
+  height: 20%;
+  border-end-end-radius: 0%;
+  margin-left: 70%;
+  margin-top: -23.4%;
+  transition-duration: 0.4s;
+}
+.download-div-popo:hover{
+  background-color: rgb(252, 108, 25);
+}
+.download-pack-popo{
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+
+/*Pack do Bizonho página inicial*/
+.bizonho {
+  width: 15%;
+  height: 35%;
+  opacity: 1;
+  position: absolute;
+  top: 30%;
+  left: 84.5%;
+  border-radius: 15%;
+  background-image: url("../images/background-library6.png");
+  background-size: 100% 100%;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.bizonho:hover{
+  top: 28%;
+  background-image: url("../images/background-onhover.png");
+}
+
+.emoji-bizonho {
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+.title-bizonho {
+  width: 70%;
+  height: 20%;
+  background-color: #4EBFFF;
+  margin-top: 4.5%;
+  border-end-start-radius: 0%;
+  font-family: Comic Sans MS;
+  text-align: center;
+  font-size: 1.2vw;
+}
+.download-div-bizonho {
+  background-color: #FFB84E;
+  width: 30%;
+  height: 20%;
+  border-end-end-radius: 0%;
+  margin-left: 70%;
+  margin-top: -23.4%;
+  transition-duration: 0.4s;
+}
+.download-div-bizonho:hover{
+  background-color: rgb(252, 108, 25);
+}
+.download-pack-bizonho{
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+
+.caixaEmoji{
+  border-radius: 15%;
+  width: 10%;
+  height: 25%;
+  background-image: url("../images/background-library.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  margin-left: 2.5%;
+  margin-top: 2%;
+  font-family: Comic Sans MS;
+  font-size: 1vw;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+.caixaEmoji:hover{
+  background-image: url("../images/background-onhover.png");
+  background-size: 120% 120%;
+  .emojiNomeCaixaEmoji{
+    background-color: #FFB84E;
+    height: 30%;
+  }
+}
+.caixaEmoji2{
+  border-radius: 15%;
+  width: 10%;
+  height: 25%;
+  background-image: url("../images/background-library2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-duration: 1s;
+  margin-left: 2.5%;
+  margin-top: 2%;
+  font-family: Comic Sans MS;
+  font-size: 1vw;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+.caixaEmoji2:hover{
+  background-image: url("../images/background-onhover.png");
+  .emojiNomeCaixaEmoji{
+    background-color: #FFB84E;
+    height: 30%;
+  }
+}
+.caixaEmoji3{
+  border-radius: 15%;
+  width: 10%;
+  height: 25%;
+  background-image: url("../images/background-library3.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-duration: 1s;
+  margin-left: 2.5%;
+  margin-top: 2%;
+  font-family: Comic Sans MS;
+  font-size: 1vw;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+.caixaEmoji3:hover{
+  background-image: url("../images/background-onhover.png");
+  .emojiNomeCaixaEmoji{
+    background-color: #FFB84E;
+    height: 30%;
+  }
+}
+
+.caixaEmoji4{
+  border-radius: 15%;
+  width: 10%;
+  height: 25%;
+  background-image: url("../images/background-library4.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-duration: 1s;
+  margin-left: 2.5%;
+  margin-top: 2%;
+  font-family: Comic Sans MS;
+  font-size: 1vw;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+.caixaEmoji4:hover{
+  background-image: url("../images/background-onhover.png");
+  .emojiNomeCaixaEmoji{
+    background-color: #FFB84E;
+    height: 30%;
+  }
+}
+
+.caixaEmoji5{
+  border-radius: 15%;
+  width: 10%;
+  height: 25%;
+  background-image: url("../images/background-library5.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-duration: 1s;
+  margin-left: 2.5%;
+  margin-top: 2%;
+  font-family: Comic Sans MS;
+  font-size: 1vw;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+.caixaEmoji5:hover{
+  background-image: url("../images/background-onhover.png");
+  .emojiNomeCaixaEmoji{
+    background-color: #FFB84E;
+    height: 30%;
+  }
+}
+
+.caixaEmoji6{
+  border-radius: 15%;
+  width: 10%;
+  height: 25%;
+  background-image: url("../images/background-library6.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-duration: 1s;
+  margin-left: 2.5%;
+  margin-top: 2%;
+  font-family: Comic Sans MS;
+  font-size: 1vw;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+.caixaEmoji6:hover{
+  background-image: url("../images/background-onhover.png");
+  .emojiNomeCaixaEmoji{
+    background-color: #FFB84E;
+    height: 30%;
+  }
+}
+
+
+
+.imgCaixaEmoji{
+  width: 100%;
+  height: 70%;
+}
+.emojiNomeCaixaEmoji{
+  width: 100%;
+  height: 27.5%;
+  background-color: #4EBFFF;
+  opacity: 1;
+  border-end-end-radius: 0%;
+  border-end-start-radius: 0%;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+
+
+
+
+/* login */
+.nomeusuario {
+  width: 19.8%;
+  height: 3.8%;
+  opacity: 1;
+  position: absolute;
+  top: 28%;
+  left: 35%;
+  font-family: Comic Sans MS;
+  font-size: 2vw;
+}
+.usuario {
+  width: 19.8%;
+  height: 3.8%;
+  opacity: 1;
+  position: absolute;
+  top: 31%;
+  left: 35%;
+  font-family: Comic Sans MS;
+  font-size: 4.25vw;
+}
+.senha {
+  width: 19.8%;
+  height: 3.8%;
+  opacity: 1;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  font-family: Comic Sans MS;
+  font-size: 2vw;
+}
+.textsenha {
+  width: 160px;
+  height: 24px;
+  opacity: 1;
+  position: absolute;
+  top: 43%;
+  left: 35%;
+  font-family: Comic Sans MS;
+  font-size: 4.25vw;
+}
+
+/* créditos */
+.emojis{
+  opacity: 1;
+  position: absolute;
+  top: 18%;
+  left: 10%;
+  font-family: Comic Sans  MS;
+  font-size: 2vw;
+  color: #050505;
+  padding: 1%;
+}
+.linkemojis{
+  opacity: 1;
+  position: absolute;
+  top: 24%;
+  left: 12%;
+  font-family: Comic Sans MS;
+  font-size: 2vw;
+  color: #050505;
+  padding: 1%;
+}
+.outroslinks{
+  opacity: 1;
+  position: absolute;
+  top: 42%;
+  left: 8%;
+  font-family: Comic Sans  MS;
+  font-size: 2vw;
+  font-weight: bold;
+  color: #050505;
+  padding: 1%;
+}
+.outlik{
+  opacity: 1;
+  position: absolute;
+  top: 48%;
+  left: 12%;
+  font-family: Comic Sans  MS;
+  font-size: 2vw;
+  color: #050505;
+  padding: 1%;
+}
+.fontes {
+  opacity: 1;
+  position: absolute;
+  top: 13%;
+  left: 8%;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  font-size: 2vw;
+  color: #050505;
+  padding: 1%;
+}
+
+/* grupo */
+
+.integrantes {
+  opacity: 1;
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  font-size: 2vw;
+  color: #050505;
+  padding: 1%;
+}
+.textintegrantes{
+  opacity: 1;
+  position: absolute;
+  top: 13%;
+  left: 10%;
+  font-family: Comic Sans  MS;
+  font-size: 2vw;
+  color: #050505;
+  padding: 1%;
+}
+.sobre{
+  opacity: 1;
+  position: absolute;
+  top: 30%;
+  left: 8%;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  font-size: 2vw;
+  color: #050505;
+  padding: 1%;
+}
+.textsobre{
+  opacity: 1;
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  font-family: Comic Sans  MS;
+  font-size: 2vw;
+  color: #050505;
+  padding: 1%;
+}
+
+.download-pack {
+  width: 8%;
+  height: 8%;
+  background-color: #4EBFFF;
+  position: absolute;
+  top: 2%;
+  left: 45%;
+  border-radius: 15%;
+  font-family: Comic sans MS;
+  font-size: 1.3vw;
+  font-weight: 100;
+  color: #FFF6A4;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-align:center;
+}
+
+.download-pack:hover{
+  background-color: #FFF6A4;
+  color: #4EBFFF;
+  top: 0px;
+  width: 8.5%;
+  height: 8.5%;
+}
+
+
+.divgeralBiblioteca{
+  height: 100vh;
+  margin: 0% 0% 0% 4.8%;
+}
